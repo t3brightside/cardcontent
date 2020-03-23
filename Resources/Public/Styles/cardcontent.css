@@ -4,35 +4,53 @@
 
 .cardcontent {
     width: 100%;
+    position: relative;
 }
 
-.cardcontent>.item img {
+/* card layout */
+.cardcontent.template-card img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.cardcontent>.item {
-    float: left;
+.cardcontent.template-card .title {
+    margin: 1rem 0;
+    padding: 0;
 }
 
-.cardcontent>.item a:hover {
-    text-decoration: none;
+.cardcontent.template-card .subtitle {
+    margin-top: 1rem;
 }
 
-.cardcontent .item .title {}
+/* slide layout */
 
-.cardcontent .item .desc {}
+.cardcontent.template-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-/* column layouts */
-.cardcontent.colcount-1 .space,
-.cardcontent.colcount-3 .space:nth-child(3n),
-.cardcontent.colcount-2 .space:nth-child(4n),
-.cardcontent.colcount-4 .space:nth-child(8n),
-.cardcontent.colcount-5 .space:nth-child(10n),
-.cardcontent.colcount-6 .space:nth-child(12n),
-.cardcontent.colcount-7 .space:nth-child(14n),
-.cardcontent.colcount-8 .space:nth-child(16n) {
-    float: none;
-    clear: both;
+.cardcontent.template-slide .text {
+    position: absolute;
+    width: 40%;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    left: 2rem;
+    bottom: 2rem;
+}
+
+.cardcontent.template-slide .title {
+    margin-top: -0.2rem;
+    margin-bottom: 1rem;
+    font-size: 1.75em;
+}
+
+.cardcontent.template-slide .subtitle {
+    margin-top: 1rem;
+}
+
+
+.cardcontent.template-slide .text :last-child {
+    margin-bottom: 0;
 }

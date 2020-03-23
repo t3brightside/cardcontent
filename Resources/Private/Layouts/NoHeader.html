@@ -1,0 +1,32 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:spaceless>
+	<div id="c{data.uid}" class="
+		frame frame-{data.frame_class}
+		frame-type-{data.CType}
+		frame-layout-{data.layout}
+        {f:if(condition: data.tx_brightsidecontent_template, then: ' template-{data.tx_brightsidecontent_template}', else: ' template-0')}
+		{f:if(condition: data.tx_pagelist_template, then: ' template-{data.tx_pagelist_template}', else: ' template-0')}
+		{f:if(condition: data.tx_personnel_template, then: ' template-{data.tx_personnel_template}', else: ' template-0')}
+		{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}
+		{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}
+		{f:if(condition: '{media -> f:count()} == 1', then: ' mediacount-1')}
+		{f:if(condition: '{data.header_layout} != 100 && {data.header}', then: ' hasheader')}
+	">
+        <div class="inner-wrap">
+            <f:if condition="{data._LOCALIZED_UID}">
+			               <a id="c{data._LOCALIZED_UID}"></a>
+		    </f:if>
+			<f:render section="Before" optional="true">
+				<f:render partial="DropIn/Before/All" arguments="{_all}" />
+			</f:render>
+			<f:render section="Main" optional="true" />
+			<f:render section="Footer" optional="true">
+				<f:render partial="Footer/All" arguments="{_all}" />
+			</f:render>
+			<f:render section="After" optional="true">
+				<f:render partial="DropIn/After/All" arguments="{_all}" />
+			</f:render>
+	    </div>
+    </div>
+</f:spaceless>
+</html>

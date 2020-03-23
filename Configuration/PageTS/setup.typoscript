@@ -14,8 +14,8 @@ mod.wizards.newContentElement.wizardItems.common {
 }
 
 TCEFORM.tt_content.tx_cardcontent_template.addItems {
-	0 = Card
-	1 = Slide
+	card = Card
+	slide = Slide
 }
 
 

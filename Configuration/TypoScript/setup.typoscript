@@ -5,9 +5,8 @@ lib.cardcontent.templateRootPaths.10 = EXT:cardcontent/Resources/Private/Templat
 lib.cardcontent.templateRootPaths.20 = {$cardcontent.templateRootPath}
 lib.cardcontent.partialRootPaths.10 = EXT:cardcontent/Resources/Private/Partials/
 lib.cardcontent.partialRootPaths.20 = {$cardcontent.partialRootPath}
-lib.cardcontent.layoutRootPaths.10 = EXT:fluid_styled_content/Resources/Private/Layouts/
-lib.cardcontent.layoutRootPaths.20 = EXT:cardcontent/Resources/Private/Layouts/
-lib.cardcontent.layoutRootPaths.30 = {$styles.templates.layoutRootPath}
+lib.cardcontent.layoutRootPaths.10 = EXT:cardcontent/Resources/Private/Layouts/
+lib.cardcontent.layoutRootPaths.20 = {$cardcontent.layoutRootPath}
 
 tt_content.cardcontent =< lib.cardcontent
 tt_content.cardcontent {
@@ -21,11 +20,6 @@ tt_content.cardcontent {
     }
     settings {
         imageWidth = {$cardcontent.imageWidth}
-        imagePadding = {$cardcontent.imagePadding}
-        zoomMaxWidth = {$cardcontent.zoomMaxWidth}
-        zoomMaxHeight = {$cardcontent.zoomMaxHeight}
-        paginationLinks = {$cardcontent.paginationLinks}
-        lightboxClass = {$cardcontent.lightboxClass}
     }
     extbase {
         pluginName = Cardcontent

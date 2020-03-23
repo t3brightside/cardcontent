@@ -4,5 +4,7 @@
 	cardcontent.templateRootPath = EXT:cardcontent/Resources/Private/Templates/
 # cat=Cardcontent/cardcontent; type=string; label= Partials root paht
 	cardcontent.partialRootPath = EXT:cardcontent/Resources/Private/Partials/
+# cat=Cardcontent/cardcontent; type=string; label= Partials root paht
+	cardcontent.layoutRootPath = EXT:cardcontent/Resources/Private/Layouts/
 # cat=Cardcontent/cardcontent; type=string; label= Maximum image with in one column layout in px
 	cardcontent.imageWidth = 1320

@@ -139,7 +139,7 @@
                             ],
                             \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
                                 'showitem' => '
-                                    tx_cardcontent_bgplacement,crop,
+                                    tx_cardcontent_bgplacement,alternative,crop,
                                     --palette--;;filePalette'
                             ],
                         ],
