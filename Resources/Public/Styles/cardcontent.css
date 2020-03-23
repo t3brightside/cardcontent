@@ -1,0 +1,49 @@
+.cardcontent * {
+    box-sizing: border-box;
+}
+
+.cardcontent {
+    width: 100%;
+}
+
+.cardcontent>.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cardcontent>.item {
+    float: left;
+}
+
+.cardcontent>.item a:hover {
+    text-decoration: none;
+}
+
+.cardcontent>.space {
+    float: left;
+}
+
+.cardcontent>.item figcaption {
+    display: inline-block;
+    padding-top: 0.5em;
+    font-size: .75em;
+    line-height: 1.4em;
+}
+
+.cardcontent .item .title {}
+
+.cardcontent .item .desc {}
+
+/* column layouts */
+.cardcontent.colcount-1 .space,
+.cardcontent.colcount-3 .space:nth-child(3n),
+.cardcontent.colcount-2 .space:nth-child(4n),
+.cardcontent.colcount-4 .space:nth-child(8n),
+.cardcontent.colcount-5 .space:nth-child(10n),
+.cardcontent.colcount-6 .space:nth-child(12n),
+.cardcontent.colcount-7 .space:nth-child(14n),
+.cardcontent.colcount-8 .space:nth-child(16n) {
+    float: none;
+    clear: both;
+}
