@@ -20,17 +20,6 @@
     text-decoration: none;
 }
 
-.cardcontent>.space {
-    float: left;
-}
-
-.cardcontent>.item figcaption {
-    display: inline-block;
-    padding-top: 0.5em;
-    font-size: .75em;
-    line-height: 1.4em;
-}
-
 .cardcontent .item .title {}
 
 .cardcontent .item .desc {}

@@ -1,16 +1,6 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 	<f:layout name="Default" />
 	<f:section name="Main">
-		<f:variable name="spaceWidth">{settings.imagePadding}</f:variable>
-		<f:comment>
-			Example:
-			for conditional space width
-			<f:if condition="{data.tx_gridelements_columns} == 101">
-				<f:variable name="spaceWidth">4</f:variable>
-			</f:if>
-		</f:comment>
-		<f:variable name="spaceWidthTotal">{data.imagecols - 1 * spaceWidth}</f:variable>
-		<f:variable name="itemWidth">{100 - spaceWidthTotal / data.imagecols}</f:variable>
 		<f:variable name="imageWidthSet">{settings.imageWidth}</f:variable>
 		<f:comment>
 			Example:
@@ -19,41 +9,12 @@
 				<f:variable name="imageWidthSet">627</f:variable>
 			</f:if>
 		</f:comment>
-		<f:variable name="spaceInPx">{data.imagecols - 1 * settings.imagePadding / 100 * imageWidthSet}</f:variable>
-		<f:variable name="imageWidth">{imageWidthSet - spaceInPx / data.imagecols}</f:variable>
+		<f:variable name="imageWidth">{imageWidthSet}</f:variable>
 		<f:variable name="imageWidth_x2">{imageWidth * 2}</f:variable>
 		<f:if condition="{data.tx_cardcontent_template} == 0">
-			<div id="cardcontent-{data.uid}" class="cardcontent template-{data.tx_cardcontent_template} colcount-{data.imagecols}">
-				<f:if condition="{data.tx_cardcontent_paginate} == 1">
-					<f:then>
-						<f:widget.paginate objects="{assets}" as="paginatedAssets" configuration="{itemsPerPage: '{data.tx_cardcontent_paginateitems}', insertAbove: 0, insertBelow: 1, maximumNumberOfLinks: '{settings.paginationLinks}'}">
-							<f:for each="{paginatedAssets}" as="asset" iteration="iterator">
-								<f:render partial="Item" arguments="{_all}" />
-							</f:for>
-						</f:widget.paginate>
-					</f:then>
-					<f:else>
-						<f:for each="{assets}" as="asset" iteration="iterator">
-							<f:render partial="Item" arguments="{_all}" />
-						</f:for>
-					</f:else>
-				</f:if>
+			<div class="cardcontent template-{data.tx_cardcontent_template}">
+				<f:render partial="Item" arguments="{_all}" />
 			</div>
 		</f:if>
-		<script type="text/javascript">
-			function setSpaceHeight{data.uid}() {
-				var cardcontent = document.getElementById("cardcontent-{data.uid}");
-				var firstSpace = cardcontent.childNodes[1];
-				var width = firstSpace.getBoundingClientRect().width;
-				var spaceElement = cardcontent.querySelectorAll('.space');
-				for(var i=0;i<spaceElement.length;i++){
-					spaceElement[i].style.height = width+"px";
-				}
-			}
-			setSpaceHeight{data.uid}();
-			window.addEventListener('resize', function(event){
-				setSpaceHeight{data.uid}();
-			});
-		</script>
 	</f:section>
 </html>
