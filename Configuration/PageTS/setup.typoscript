@@ -4,7 +4,7 @@ mod.wizards.newContentElement.wizardItems.common {
       cardcontent {
          iconIdentifier = mimetypes-x-content-cardcontent
          title = Card/Slide
-         description = Image card/slide content element with link
+         description = Image card or slide content element
          tt_content_defValues {
             CType = cardcontent
          }

@@ -7,7 +7,7 @@
     position: relative;
 }
 
-/* card layout */
+/* card */
 .cardcontent.template-card img {
     width: 100%;
     height: auto;
@@ -23,8 +23,7 @@
     margin-top: 1rem;
 }
 
-/* slide layout */
-
+/* slide */
 .cardcontent.template-slide img {
     width: 100%;
     height: auto;
@@ -49,7 +48,6 @@
 .cardcontent.template-slide .subtitle {
     margin-top: 1rem;
 }
-
 
 .cardcontent.template-slide .text :last-child {
     margin-bottom: 0;
