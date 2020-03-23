@@ -26,7 +26,7 @@
 
 ## Sources
 
-- [GitHub](https://github.com/t3brightside/gcardcontent)
+- [GitHub](https://github.com/t3brightside/cardcontent)
 - [Packagist](https://packagist.org/packages/t3brightside/cardcontent)
 - [TER](https://extensions.typo3.org/extension/cardcontent/)
 
