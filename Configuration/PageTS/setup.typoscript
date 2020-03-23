@@ -3,8 +3,8 @@ mod.wizards.newContentElement.wizardItems.common {
    elements {
       cardcontent {
          iconIdentifier = mimetypes-x-content-cardcontent
-         title = Card/Slide
-         description = Image card or slide content element
+         title = Card
+         description = Image card with link
          tt_content_defValues {
             CType = cardcontent
          }
@@ -14,8 +14,8 @@ mod.wizards.newContentElement.wizardItems.common {
 }
 
 TCEFORM.tt_content.tx_cardcontent_template.addItems {
-	card = Card
-	slide = Slide
+	0 = Style 1
+	1 = Style 2
 }
 
 
