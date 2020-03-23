@@ -16,12 +16,10 @@
 ## Features
 
 - Automatic image optimisation
-- Predefined aspect ratios for images and click-enlarge
-- Enable/disable image title and description
-- Pagination control
+- Predefined aspect ratios for images
 
 ## Install
-- Install from TER **gellerycontent** or composer **t3brightside/gellerycontent**
+- Install from TER **cardcontent** or composer **t3brightside/cardcontent**
 – Include static templates to root template
 
 ## Sources
