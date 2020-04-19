@@ -1,8 +1,10 @@
-<f:image
-    image="{assets.0}"
-    class="image"
-    cropVariant="{data.tx_cardcontent_cropratio}"
-    width="{imageWidth}"
-    alt="{f:if(condition:'{assets.0.properties.alternative}', then:'{assets.0.properties.alternative -> f:format.stripTags()}', else:'{data.header -> f:format.stripTags()}')}"
-    additionalAttributes="{srcset: '{f:uri.image(image:\'{assets.0}\', cropVariant:\'{data.tx_cardcontent_cropratio}\', width:\'{imageWidth_x2}\')}  2x'}"
-/>
+<f:if condition="{assets.0}">
+    <f:image
+        image="{assets.0}"
+        class="image"
+        cropVariant="{data.tx_cardcontent_cropratio}"
+        width="{imageWidth}"
+        alt="{f:if(condition:'{assets.0.properties.alternative}', then:'{assets.0.properties.alternative -> f:format.stripTags()}', else:'{data.header -> f:format.stripTags()}')}"
+        additionalAttributes="{srcset: '{f:uri.image(image:\'{assets.0}\', cropVariant:\'{data.tx_cardcontent_cropratio}\', width:\'{imageWidth_x2}\')}  2x'}"
+    />
+</f:if>
