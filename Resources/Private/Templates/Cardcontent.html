@@ -11,14 +11,9 @@
 		</f:comment>
 		<f:variable name="imageWidth">{imageWidthSet}</f:variable>
 		<f:variable name="imageWidth_x2">{imageWidth * 2}</f:variable>
-		<f:if condition="{data.tx_cardcontent_template} == card">
+		<f:if condition="{data.tx_cardcontent_template} == 0">
 			<div class="cardcontent template-{data.tx_cardcontent_template}">
 				<f:render partial="Card" arguments="{_all}" />
-			</div>
-		</f:if>
-		<f:if condition="{data.tx_cardcontent_template} == slide">
-			<div class="cardcontent template-{data.tx_cardcontent_template}">
-				<f:render partial="Slide" arguments="{_all}" />
 			</div>
 		</f:if>
 	</f:section>
