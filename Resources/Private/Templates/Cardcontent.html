@@ -16,5 +16,10 @@
 				<f:render partial="Card" arguments="{_all}" />
 			</div>
 		</f:if>
+		<f:if condition="{data.tx_cardcontent_template} == 1">
+			<div class="cardcontent template-{data.tx_cardcontent_template}">
+				<f:render partial="Card" arguments="{_all}" />
+			</div>
+		</f:if>
 	</f:section>
 </html>
