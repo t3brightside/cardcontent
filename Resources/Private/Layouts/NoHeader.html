@@ -4,7 +4,7 @@
 		frame frame-{data.frame_class}
 		frame-type-{data.CType}
 		frame-layout-{data.layout}
-        {f:if(condition: data.tx_cardcontent_template, then: ' template-{data.tx_cardcontent_template}')}
+        {f:if(condition: data.tx_cardcontent_template, then: ' template-{data.tx_cardcontent_template}', else: ' template-0')}
 		{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}
 		{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}
 		{f:if(condition: '{media -> f:count()} == 1', then: ' mediacount-1')}
