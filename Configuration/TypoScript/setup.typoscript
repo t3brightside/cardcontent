@@ -8,6 +8,26 @@ lib.cardcontent.partialRootPaths.20 = {$cardcontent.partialRootPath}
 lib.cardcontent.layoutRootPaths.10 = EXT:cardcontent/Resources/Private/Layouts/
 lib.cardcontent.layoutRootPaths.20 = {$cardcontent.layoutRootPath}
 
+
+lib.inlineSVG = SVG
+lib.inlineSVG {
+    renderMode = inline
+    src.stdWrap.cObject = FILES
+    src.stdWrap.cObject {
+        references {
+            table = tt_content
+            fieldName = assets
+        }
+        begin = 0
+        maxItems = 1
+        renderObj = TEXT
+        renderObj.value.data = file:current:publicUrl
+        renderObj.if.value = svg
+        renderObj.if.equals.data = file:current:extension
+    }
+}
+
+
 tt_content.cardcontent =< lib.cardcontent
 tt_content.cardcontent {
     templateName = Cardcontent
@@ -20,6 +40,11 @@ tt_content.cardcontent {
     }
     settings {
         imageWidth = {$cardcontent.imageWidth}
+    }
+    variables {
+
+        inlineSVG =< lib.inlineSVG
+
     }
     extbase {
         pluginName = Cardcontent
