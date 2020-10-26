@@ -24,8 +24,8 @@ tt_content.cardcontent {
     extbase {
         pluginName = Cardcontent
         controllerName = Cardcontent
-        controllerExtensionName = cardcontent
-        controllerActionName = show
+        controllerExtensionName = Cardcontent
+        controllerActionName = cardcontent
     }
     stdWrap {
         editIcons = tt_content: header [header_layout], tt_content

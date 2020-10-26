@@ -8,4 +8,12 @@
 		['source' => 'EXT:cardcontent/Resources/Public/Images/Icons/mimetypes-x-content-cardcontent.svg']
 	);
 
+	\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+	    'cardcontent',
+	    'Cardcontent',
+	    [
+	        'Cardcontent' => 'cardcontent'
+	    ]
+	);
+
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['cardcontent'] = \Brightside\Cardcontent\Hooks\PageLayoutView\ContentElementPreviewRenderer::class;
