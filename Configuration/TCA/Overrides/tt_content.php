@@ -262,11 +262,12 @@
         ]);
 
     $GLOBALS['TCA']['tt_content']['palettes']['cardcontentSettings']['showitem'] = '
+        --linebreak--,tx_cardcontent_template,
         --linebreak--,header,
         --linebreak--,subheader,
         --linebreak--,bodytext,
         --linebreak--,tx_cardcontent_link,tx_cardcontent_linktext,
-        --linebreak--,tx_cardcontent_template,tx_cardcontent_cropratio,
+        --linebreak--,tx_cardcontent_cropratio,
         --linebreak--,assets,
     ';
 
