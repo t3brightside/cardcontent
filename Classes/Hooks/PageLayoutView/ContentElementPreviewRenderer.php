@@ -28,6 +28,7 @@ class ContentElementPreviewRenderer implements PageLayoutViewDrawItemHookInterfa
                     unset($linkedContent);
                 }
             }
+			$itemContent .= $parentObject->linkEditContent($parentObject->renderText($row['bodytext']), $row);
 			$itemContent .= '<ul style="margin: 0; margin-top: 0.5em; padding: 0.2em 1.4em;">';
     		$itemContent .= '<li>' . $parentObject->linkEditContent($parentObject->renderText('Template: ' . $row['tx_cardcontent_template']), $row) . '</li>';
 			$itemContent .= '<li>' . $parentObject->linkEditContent($parentObject->renderText('Image crop: ' . $row['tx_cardcontent_cropratio']), $row) . '</li>';
