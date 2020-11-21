@@ -34,6 +34,9 @@
                     ['Bottom left', 'left bottom'],
                     ['Bottom right', 'right bottom'],
                 ],
+                'behaviour' => [
+                  'allowLanguageSynchronization' => true,
+                ],
             ],
         ],
       ];
@@ -47,6 +50,9 @@
             'renderType' => 'selectSingle',
             'default' => 0,
             'items'    => array(), /* items set in page TsConfig */
+            'behaviour' => [
+              'allowLanguageSynchronization' => true,
+            ],
         ),
     ];
 
@@ -58,6 +64,9 @@
             'renderType' => 'selectSingle',
             'default' => 'default',
             'items'    => array(), /* items set in page TsConfig */
+            'behaviour' => [
+              'allowLanguageSynchronization' => true,
+            ],
         ),
     ];
 
@@ -77,7 +86,10 @@
                     ],
                 ],
             ],
-            'softref' => 'typolink'
+            'softref' => 'typolink',
+            'behaviour' => [
+              'allowLanguageSynchronization' => true,
+            ],
         ],
     ];
     $GLOBALS['TCA']['tt_content']['columns']['tx_cardcontent_linktext'] = [

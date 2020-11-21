@@ -1,5 +1,19 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
     <f:spaceless>
-        <f:render section="Main" optional="true" />
+        <div id="c{data.uid}" class="
+    		frame frame-{data.frame_class}
+    		frame-type-{data.CType}
+    		{f:if(condition: data.layout, then: ' frame-layout-{data.layout}')}
+            {f:if(condition: data.tx_cardcontent_template, then: ' template-{data.tx_cardcontent_template}', else: ' template-0')}
+    		{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}
+    		{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}
+    		{f:if(condition: '{media -> f:count()} == 1', then: ' mediacount-1')}
+    		{f:if(condition: '{data.header_layout} != 100 && {data.header}', then: ' hasheader')}
+            {f:if(condition: '{assets.0}', then: 'hasimage')}
+    	">
+            <div class="inner-wrap">
+                <f:render section="Main" optional="true" />
+            </div>
+        </div>
     </f:spaceless>
 </html>

@@ -9,6 +9,7 @@
 		{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}
 		{f:if(condition: '{media -> f:count()} == 1', then: ' mediacount-1')}
 		{f:if(condition: '{data.header_layout} != 100 && {data.header}', then: ' hasheader')}
+		{f:if(condition: '{assets.0}', then: 'hasimage')}
 	">
         <div class="inner-wrap">
             <f:if condition="{data._LOCALIZED_UID}">
