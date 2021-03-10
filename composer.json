@@ -15,12 +15,17 @@
       }
   ],
   "require": {
-    "typo3/cms-core": "^10.4",
+    "typo3/cms-core": "^9.5 || ^10.4",
     "typo3/cms-fluid-styled-content": "*"
   },
   "autoload": {
     "psr-4": {
       "Brightside\\Cardcontent\\": "Classes"
     }
+  },
+  "extra": {
+      "typo3/cms": {
+          "extension-key": "cardcontent"
+      }
   }
 }
