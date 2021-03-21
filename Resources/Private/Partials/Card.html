@@ -2,9 +2,9 @@
     <f:if condition="{assets.0}">
         <f:render partial="Image" arguments="{_all}" />
     </f:if>
-    <h2 class="title">{data.header}</h2>
-    <h3 class="subtitle">{data.subheader}</h3>
-    <f:format.raw>{data.bodytext}</f:format.raw>
+    <f:if condition="{data.header}"><h2 class="title">{data.header}</h2></f:if>
+    <f:if condition="{data.subheader}"><h3 class="subtitle">{data.subheader}</h3></f:if>
+    <f:if condition="{data.bodytext}"><div class="text"><f:format.raw>{data.bodytext}</f:format.raw></div></f:if>
     <f:if condition="{data.tx_cardcontent_link}">
         <f:link.typolink parameter="{data.tx_cardcontent_link}" class="btn button">
             <f:if condition="{data.tx_cardcontent_linktext}">

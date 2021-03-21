@@ -1,3 +1,6 @@
+.frame-type-cardcontent {
+  background: #eee;
+}
 .cardcontent * {
     box-sizing: border-box;
 }
@@ -8,17 +11,21 @@
 }
 
 /* card */
-.cardcontent.template-0 img {
+.cardcontent img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.cardcontent.template-0 .title {
-    margin: 1rem 0;
+.cardcontent .title {
+    margin: 0;
     padding: 0;
 }
 
-.cardcontent.template-0 .subtitle {
+.cardcontent .subtitle {
+    margin-top: 1rem;
+}
+
+.cardcontent .text {
     margin-top: 1rem;
 }
