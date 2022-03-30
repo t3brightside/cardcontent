@@ -24,7 +24,7 @@ TCEFORM.tt_content.tx_cardcontent_cropratio.addItems {
     tv = TV (4:3)
     widescreen = Widescreen (16:9)
     anamorphic = Anamorphic (2.39:1)
-	  square = Square (1:1)
+	square = Square (1:1)
     portrait = Portrait (3:4)
     tower = Tower (9:16)
     skyscraper = Skyscraper (1:2.39)

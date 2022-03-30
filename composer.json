@@ -2,7 +2,6 @@
   "name": "t3brightside/cardcontent",
   "description": "TYPO3 CMS extension to create image cards with links.",
   "type": "typo3-cms-extension",
-  "version": "0.0.2",
   "keywords": ["TYPO3", "extension", "images", "card", "content"],
   "homepage": "https://github.com/t3brightside/cardcontent/",
   "license": "GPL-3.0+",
@@ -15,7 +14,7 @@
       }
   ],
   "require": {
-    "typo3/cms-core": "^9.5 || ^10.4",
+    "typo3/cms-core": "^10.4 || ^11.5",
     "typo3/cms-fluid-styled-content": "*"
   },
   "autoload": {

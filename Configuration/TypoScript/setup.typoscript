@@ -8,7 +8,6 @@ lib.cardcontent.partialRootPaths.20 = {$cardcontent.partialRootPath}
 lib.cardcontent.layoutRootPaths.10 = EXT:cardcontent/Resources/Private/Layouts/
 lib.cardcontent.layoutRootPaths.20 = {$cardcontent.layoutRootPath}
 
-
 lib.inlineSVG = SVG
 lib.inlineSVG {
     renderMode = inline
@@ -27,7 +26,6 @@ lib.inlineSVG {
     }
 }
 
-
 tt_content.cardcontent =< lib.cardcontent
 tt_content.cardcontent {
     templateName = Cardcontent
@@ -42,15 +40,7 @@ tt_content.cardcontent {
         imageWidth = {$cardcontent.imageWidth}
     }
     variables {
-
         inlineSVG =< lib.inlineSVG
-
-    }
-    extbase {
-        pluginName = Cardcontent
-        controllerName = Cardcontent
-        controllerExtensionName = Cardcontent
-        controllerActionName = cardcontent
     }
     stdWrap {
         editIcons = tt_content: header [header_layout], tt_content
