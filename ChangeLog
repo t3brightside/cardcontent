@@ -2,3 +2,5 @@
 	– Initial release
 * 1.0.0
 	– TYPO3 11.5 compatibility
+* 1.0.1
+	– Rename Image partial to CardImage for avoiding conflicts
